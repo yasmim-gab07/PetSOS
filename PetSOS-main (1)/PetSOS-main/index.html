@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PetSOS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- ========================= -->
+        <!-- CABEÇALHO -->
+        <!-- ========================= -->
+
+        <header class="header">
+
+            <div class="brand">
+
+                <img
+    src="img/logo.petSOS.png"
+    alt="Logo PetSOS"
+    class="logo-image"
+>
+
+                <div>
+                    <h1>Pet<span>SOS</span></h1>
+                    <p>Cuidado rápido quando seu pet mais precisa.</p>
+                </div>
+
+            </div>
+
+            <div class="header-actions">
+
+                <button
+                    class="icon-button"
+                    onclick="abrirNotificacoes()"
+                    title="Notificações"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                        <path d="M10 21h4"></path>
+                    </svg>
+                </button>
+
+                <button
+                    class="icon-button"
+                    onclick="abrirTutor()"
+                    title="Meu perfil"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="4"></circle>
+                        <path d="M4 21c1.5-4 4-6 8-6s6.5 2 8 6"></path>
+                    </svg>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ========================= -->
+        <!-- HERO -->
+        <!-- ========================= -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    CUIDADO E SEGURANÇA
+                </span>
+
+                <h2>
+                    Seu pet seguro<br>
+                    em todos os momentos.
+                </h2>
+
+                <p>
+                    Tenha informações importantes,
+                    atendimento veterinário e o cartão
+                    de emergência sempre à mão.
+                </p>
+
+            </div>
+
+            <div class="hero-illustration">
+
+    <img
+        src="img/animais.petSOS.png"
+        alt="Cachorro e gato"
+        class="hero-pets-image"
+    >
+
+</div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- EMERGÊNCIA -->
+        <!-- ========================= -->
+
+        <button
+            class="emergency-card"
+            onclick="abrirEmergencia()"
+        >
+
+            <div class="emergency-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 3v18"></path>
+                    <path d="M3 12h18"></path>
+                </svg>
+            </div>
+
+            <div class="emergency-text">
+
+                <strong>Cartão de emergência</strong>
+
+                <p>
+                    Acesse rapidamente as informações
+                    importantes do seu pet.
+                </p>
+
+            </div>
+
+            <span class="arrow">›</span>
+
+        </button>
+
+
+        <!-- ========================= -->
+        <!-- ACESSOS PRINCIPAIS -->
+        <!-- ========================= -->
+
+        <section class="section-heading">
+
+            <div>
+                <span>ACESSO RÁPIDO</span>
+                <h2>O que você precisa?</h2>
+            </div>
+
+        </section>
+
+
+        <section class="quick-grid">
+
+            <button
+                class="quick-card"
+                onclick="abrirPets()"
+            >
+
+                <div class="quick-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="6" cy="7" r="2"></circle>
+                        <circle cx="12" cy="5" r="2"></circle>
+                        <circle cx="18" cy="7" r="2"></circle>
+                        <path d="M12 20c-5 0-7-3-7-5s2-4 7-4 7 2 7 4-2 5-7 5z"></path>
+                    </svg>
+                </div>
+
+                <strong>Meus Pets</strong>
+
+                <p>
+                    Gerencie as fichas
+                    dos seus animais.
+                </p>
+
+                <span>›</span>
+
+            </button>
+
+
+            <button
+                class="quick-card"
+                onclick="abrirVeterinarios()"
+            >
+
+                <div class="quick-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 3v7"></path>
+                        <path d="M10 3v7"></path>
+                        <path d="M6 7h4"></path>
+                        <path d="M8 10v11"></path>
+                        <path d="M16 3v18"></path>
+                        <circle cx="16" cy="7" r="3"></circle>
+                    </svg>
+                </div>
+
+                <strong>Veterinário</strong>
+
+                <p>
+                    Encontre clínicas
+                    e especialistas.
+                </p>
+
+                <span>›</span>
+
+            </button>
+
+
+            <button
+                class="quick-card"
+                onclick="abrirHistorico()"
+            >
+
+                <div class="quick-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M5 3h10l4 4v14H5z"></path>
+                        <path d="M15 3v5h4"></path>
+                        <path d="M8 12h7"></path>
+                        <path d="M8 16h5"></path>
+                    </svg>
+                </div>
+
+                <strong>Histórico</strong>
+
+                <p>
+                    Consulte atendimentos
+                    e procedimentos.
+                </p>
+
+                <span>›</span>
+
+            </button>
+
+
+            <button
+                class="quick-card"
+                onclick="abrirChat()"
+            >
+
+                <div class="quick-icon chat-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 5h16v11H8l-4 4z"></path>
+                        <path d="M8 9h8"></path>
+                        <path d="M8 13h5"></path>
+                    </svg>
+                </div>
+
+                <strong>Chat veterinário</strong>
+
+                <p>
+                    Converse com um
+                    veterinário.
+                </p>
+
+                <span>›</span>
+
+            </button>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- INFORMAÇÃO -->
+        <!-- ========================= -->
+
+        <section class="info-banner">
+
+            <div class="info-banner-icon">
+
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"></path>
+                    <path d="M12 8v5"></path>
+                    <circle cx="12" cy="16.5" r=".7"></circle>
+                </svg>
+
+            </div>
+
+            <div>
+
+                <strong>
+                    Informação também é cuidado.
+                </strong>
+
+                <p>
+                    Mantenha a ficha do seu pet
+                    sempre atualizada.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- NAVEGAÇÃO -->
+        <!-- ========================= -->
+
+        <nav class="bottom-nav">
+
+            <button
+                class="nav-item active"
+                onclick="voltarInicio()"
+            >
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 11l9-8 9 8"></path>
+                    <path d="M5 10v10h14V10"></path>
+                </svg>
+                <span>Início</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                onclick="abrirPets()"
+            >
+                <svg viewBox="0 0 24 24">
+                    <circle cx="6" cy="7" r="2"></circle>
+                    <circle cx="12" cy="5" r="2"></circle>
+                    <circle cx="18" cy="7" r="2"></circle>
+                    <path d="M12 20c-5 0-7-3-7-5s2-4 7-4 7 2 7 4-2 5-7 5z"></path>
+                </svg>
+                <span>Pets</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                onclick="abrirVeterinarios()"
+            >
+                <svg viewBox="0 0 24 24">
+                    <path d="M6 3v7"></path>
+                    <path d="M10 3v7"></path>
+                    <path d="M6 7h4"></path>
+                    <path d="M8 10v11"></path>
+                    <path d="M16 3v18"></path>
+                    <circle cx="16" cy="7" r="3"></circle>
+                </svg>
+                <span>Veterinário</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                onclick="abrirChat()"
+            >
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 5h16v11H8l-4 4z"></path>
+                </svg>
+                <span>Chat</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                onclick="abrirConfiguracoes()"
+            >
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19 12a7 7 0 0 0-.1-1l2-1.5-2-3.4-2.3 1a7 7 0 0 0-1.7-1L15 3h-4l-.4 2.1a7 7 0 0 0-1.7 1l-2.3-1-2 3.4 2 1.5 0 2-2 1.5 2 3.4 2.3-1a7 7 0 0 0 1.7 1L11 21h4l.4-2.1a7 7 0 0 0 1.7-1l2.3 1 2-3.4-2-1.5a7 7 0 0 0-.1-1z"></path>
+                </svg>
+                <span>Config.</span>
+            </button>
+
+        </nav>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- MODAL: EMERGÊNCIA -->
+    <!-- ================================================= -->
+
+    <div id="emergency-modal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-button"
+                onclick="fecharModal('emergency-modal')"
+            >
+                ×
+            </button>
+
+            <div class="modal-heading danger-heading">
+
+                <div class="modal-icon">
+                    !
+                </div>
+
+                <div>
+                    <small>EMERGÊNCIA</small>
+                    <h2>Cartão do Pet</h2>
+                </div>
+
+            </div>
+
+            <div id="emergency-content"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- MODAL: PETS -->
+    <!-- ================================================= -->
+
+    <div id="pets-modal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-button"
+                onclick="fecharModal('pets-modal')"
+            >
+                ×
+            </button>
+
+            <div class="modal-heading">
+
+                <div class="modal-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="6" cy="7" r="2"></circle>
+                        <circle cx="12" cy="5" r="2"></circle>
+                        <circle cx="18" cy="7" r="2"></circle>
+                        <path d="M12 20c-5 0-7-3-7-5s2-4 7-4 7 2 7 4-2 5-7 5z"></path>
+                    </svg>
+                </div>
+
+                <div>
+                    <small>MEUS PETS</small>
+                    <h2>Seus animais</h2>
+                </div>
+
+            </div>
+
+            <div id="pet-list"></div>
+
+            <button
+                class="primary-button"
+                onclick="mostrarFormulario()"
+            >
+                + Adicionar novo pet
+            </button>
+
+
+            <!-- FORMULÁRIO DO PET -->
+
+            <div
+                id="pet-form"
+                class="form-container"
+                data-editing=""
+            >
+
+                <h3>Cadastrar novo pet</h3>
+
+                <div class="form-grid">
+
+                    <div class="form-group full">
+                        <label>Nome do pet</label>
+                        <input
+                            type="text"
+                            id="pet-name"
+                            placeholder="Ex: Mel"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Espécie</label>
+
+                        <select id="pet-species">
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option value="Cachorro">
+                                Cachorro
+                            </option>
+
+                            <option value="Gato">
+                                Gato
+                            </option>
+
+                            <option value="Outro">
+                                Outro
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Sexo</label>
+
+                        <select id="pet-sex">
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option value="Macho">
+                                Macho
+                            </option>
+
+                            <option value="Fêmea">
+                                Fêmea
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Idade</label>
+
+                        <input
+                            type="number"
+                            id="pet-age"
+                            min="0"
+                            placeholder="Ex: 3"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Peso (kg)</label>
+
+                        <input
+                            type="number"
+                            id="pet-weight"
+                            min="0"
+                            step="0.1"
+                            placeholder="Ex: 4,5"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>Alergias</label>
+
+                        <input
+                            type="text"
+                            id="pet-allergies"
+                            placeholder="Ex: Nenhuma"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>Medicamentos</label>
+
+                        <input
+                            type="text"
+                            id="pet-medicines"
+                            placeholder="Ex: Nenhum"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>Condições de saúde</label>
+
+                        <input
+                            type="text"
+                            id="pet-conditions"
+                            placeholder="Ex: Nenhuma"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>Observações</label>
+
+                        <textarea
+                            id="pet-notes"
+                            placeholder="Informações importantes sobre o pet..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-actions">
+
+                    <button
+                        class="secondary-button"
+                        onclick="cancelarEdicao()"
+                    >
+                        Cancelar
+                    </button>
+
+                    <button
+                        class="primary-button"
+                        onclick="salvarPet()"
+                    >
+                        Salvar pet
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- MODAL: TUTOR -->
+    <!-- ================================================= -->
+
+    <div id="tutor-modal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-button"
+                onclick="fecharModal('tutor-modal')"
+            >
+                ×
+            </button>
+
+            <div class="modal-heading">
+
+                <div class="modal-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="4"></circle>
+                        <path d="M4 21c1.5-4 4-6 8-6s6.5 2 8 6"></path>
+                    </svg>
+                </div>
+
+                <div>
+                    <small>MINHA CONTA</small>
+                    <h2>Perfil do tutor</h2>
+                </div>
+
+            </div>
+
+
+            <div class="profile-card">
+
+                <div class="profile-avatar">
+                    <span id="tutor-avatar">T</span>
+                </div>
+
+                <div>
+                    <strong id="tutor-name-display">
+                        Tutor PetSOS
+                    </strong>
+
+                    <p id="tutor-email-display">
+                        Cadastre seus dados
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="form-container visible-form">
+
+                <div class="form-group">
+
+                    <label>Nome completo</label>
+
+                    <input
+                        type="text"
+                        id="tutor-name"
+                        placeholder="Seu nome"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>E-mail</label>
+
+                    <input
+                        type="email"
+                        id="tutor-email"
+                        placeholder="seuemail@email.com"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Telefone</label>
+
+                    <input
+                        type="tel"
+                        id="tutor-phone"
+                        placeholder="(16) 99999-9999"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Cidade</label>
+
+                    <input
+                        type="text"
+                        id="tutor-city"
+                        placeholder="Araraquara - SP"
+                    >
+
+                </div>
+
+
+                <button
+                    class="primary-button"
+                    onclick="salvarTutor()"
+                >
+                    Salvar meus dados
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- MODAL: VETERINÁRIOS -->
+    <!-- ================================================= -->
+
+    <div id="veterinary-modal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-button"
+                onclick="fecharModal('veterinary-modal')"
+            >
+                ×
+            </button>
+
+            <div class="modal-heading">
+
+                <div class="modal-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 3v7"></path>
+                        <path d="M10 3v7"></path>
+                        <path d="M6 7h4"></path>
+                        <path d="M8 10v11"></path>
+                        <path d="M16 3v18"></path>
+                        <circle cx="16" cy="7" r="3"></circle>
+                    </svg>
+                </div>
+
+                <div>
+                    <small>ATENDIMENTO</small>
+                    <h2>Veterinários</h2>
+                </div>
+
+            </div>
+
+
+            <input
+                type="text"
+                id="search-vet"
+                class="search-input"
+                placeholder="Buscar clínica ou especialidade..."
+                oninput="filtrarVeterinarios()"
+            >
+
+
+            <div id="vet-list"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- MODAL: PERFIL DA CLÍNICA -->
+    <!-- ================================================= -->
+
+    <div id="clinic-modal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-button"
+                onclick="fecharModal('clinic-modal')"
+            >
+                ×
+            </button>
+
+            <div id="clinic-content"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- MODAL: CHAT -->
+    <!-- ================================================= -->
+
+    <div id="chat-modal" class="modal">
+
+        <div class="modal-content chat-modal-content">
+
+            <button
+                class="close-button"
+                onclick="fecharModal('chat-modal')"
+            >
+                ×
+            </button>
+
+
+            <div class="chat-header">
+
+                <div class="vet-avatar">
+                    V
+                </div>
+
+                <div>
+
+                    <strong>
+                        Dra. Mariana
+                    </strong>
+
+                    <span>
+                        Clínica Animal Saúde
+                    </span>
+
+                    <small>
+                        Atendimento veterinário
+                    </small>
+
+                </div>
+
+                <span class="online-dot"></span>
+
+            </div>
+
+
+            <div
+                id="chat-messages"
+                class="chat-messages"
+            >
+
+                <div class="message received">
+
+                    <span>
+                        Dra. Mariana
+                    </span>
+
+                    Olá! Sou a Dra. Mariana.
+                    Como posso ajudar você e seu pet?
+
+                    <small>
+                        14:32
+                    </small>
+
+                </div>
+
+
+                <div class="message received">
+
+                    <span>
+                        Dra. Mariana
+                    </span>
+
+                    Se preferir, você pode enviar
+                    a ficha de emergência do seu pet
+                    para facilitar o atendimento.
+
+                    <small>
+                        14:33
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="chat-quick-actions">
+
+                <button onclick="enviarFichaChat()">
+                    Enviar ficha do pet
+                </button>
+
+            </div>
+
+
+            <div class="chat-input-area">
+
+                <input
+                    type="text"
+                    id="chat-input"
+                    placeholder="Digite uma mensagem..."
+                    onkeydown="verificarEnter(event)"
+                >
+
+                <button
+                    onclick="enviarMensagem()"
+                    title="Enviar"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <path d="M22 2L11 13"></path>
+                        <path d="M22 2l-7 20-4-9-9-4z"></path>
+                    </svg>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- MODAL: HISTÓRICO -->
+    <!-- ================================================= -->
+
+    <div id="history-modal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-button"
+                onclick="fecharModal('history-modal')"
+            >
+                ×
+            </button>
+
+            <div class="modal-heading">
+
+                <div class="modal-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M5 3h10l4 4v14H5z"></path>
+                        <path d="M15 3v5h4"></path>
+                        <path d="M8 12h7"></path>
+                        <path d="M8 16h5"></path>
+                    </svg>
+                </div>
+
+                <div>
+                    <small>REGISTROS</small>
+                    <h2>Histórico</h2>
+                </div>
+
+            </div>
+
+
+            <div class="history-item">
+
+                <div class="history-date">
+                    15/09
+                </div>
+
+                <div>
+                    <strong>
+                        Consulta veterinária
+                    </strong>
+
+                    <p>
+                        Avaliação de rotina
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="history-item">
+
+                <div class="history-date">
+                    02/08
+                </div>
+
+                <div>
+                    <strong>
+                        Vacinação
+                    </strong>
+
+                    <p>
+                        Vacina anual
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="empty-history">
+                Novos registros aparecerão aqui.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- MODAL: CONFIGURAÇÕES -->
+    <!-- ================================================= -->
+
+    <div id="settings-modal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-button"
+                onclick="fecharModal('settings-modal')"
+            >
+                ×
+            </button>
+
+
+            <div class="modal-heading">
+
+                <div class="modal-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19 12a7 7 0 0 0-.1-1l2-1.5-2-3.4-2.3 1a7 7 0 0 0-1.7-1L15 3h-4l-.4 2.1a7 7 0 0 0-1.7 1l-2.3-1-2 3.4 2 1.5 2 1.5-2 1.5 2 3.4 2.3-1a7 7 0 0 0 1.7 1L11 21h4l.4-2.1a7 7 0 0 0 1.7-1l2.3 1 2.3 1 2-3.4-2-1.5c.1-.3.1-.7.1-1z"></path>
+                    </svg>
+                </div>
+
+                <div>
+                    <small>APLICATIVO</small>
+                    <h2>Configurações</h2>
+                </div>
+
+            </div>
+
+
+            <div class="settings-group">
+
+                <span class="settings-title">
+                    Minha conta
+                </span>
+
+                <button
+                    class="settings-item"
+                    onclick="abrirTutor()"
+                >
+                    <div class="settings-item-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="8" r="4"></circle>
+                            <path d="M4 21c1.5-4 4-6 8-6s6.5 2 8 6"></path>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <strong>
+                            Perfil do tutor
+                        </strong>
+
+                        <p>
+                            Nome, e-mail e telefone
+                        </p>
+                    </div>
+
+                    <span>›</span>
+                </button>
+
+            </div>
+
+
+            <div class="settings-group">
+
+                <span class="settings-title">
+                    Aplicativo
+                </span>
+
+
+                <button class="settings-item">
+
+                    <div class="settings-item-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                            <path d="M10 21h4"></path>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <strong>
+                            Notificações
+                        </strong>
+
+                        <p>
+                            Alertas e lembretes
+                        </p>
+                    </div>
+
+                    <span>›</span>
+
+                </button>
+
+
+                <button class="settings-item">
+
+                    <div class="settings-item-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"></path>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <strong>
+                            Privacidade
+                        </strong>
+
+                        <p>
+                            Dados e segurança
+                        </p>
+                    </div>
+
+                    <span>›</span>
+
+                </button>
+
+            </div>
+
+
+            <div class="settings-group">
+
+                <span class="settings-title">
+                    Sobre
+                </span>
+
+                <div class="about-card">
+
+                    <strong>
+                        PetSOS
+                    </strong>
+
+                    <p>
+                        Plataforma de apoio para
+                        cuidados veterinários.
+                    </p>
+
+                    <span>
+                        Versão 2.0.0
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- MODAL: NOTIFICAÇÕES -->
+    <!-- ================================================= -->
+
+    <div id="notifications-modal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-button"
+                onclick="fecharModal('notifications-modal')"
+            >
+                ×
+            </button>
+
+            <div class="modal-heading">
+
+                <div class="modal-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                        <path d="M10 21h4"></path>
+                    </svg>
+                </div>
+
+                <div>
+                    <small>AVISOS</small>
+                    <h2>Notificações</h2>
+                </div>
+
+            </div>
+
+
+            <div class="notification-card">
+
+                <div class="notification-icon">
+                    !
+                </div>
+
+                <div>
+                    <strong>
+                        Mantenha a ficha atualizada
+                    </strong>
+
+                    <p>
+                        Informações atualizadas podem
+                        facilitar um atendimento de emergência.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
