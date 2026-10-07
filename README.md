@@ -152,7 +152,7 @@ flowchart LR
   <tr>
     <td align="center">
       <strong>Informações Veterinárias</strong><br>
-      <img src="img/informacoes.vet.png" width="200">
+      <img src="img/informaçoes.vet.png" width="200">
     </td>
     <td align="center">
       <strong>Perfil do Tutor</strong><br>
@@ -160,7 +160,7 @@ flowchart LR
     </td>
     <td align="center">
       <strong>Configurações</strong><br>
-      <img src="img/configuracoes.png" width="200">
+      <img src="img/configuraçoes.png" width="200">
     </td>
   </tr>
 </table>
