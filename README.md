@@ -1,8 +1,8 @@
-#🐾 PetSOS — Plataforma de Atendimento e Emergência Veterinária
+# 🐾 PetSOS — Plataforma de Atendimento e Emergência Veterinária
 
 Informação rápida. Cuidado quando mais importa.
 
-##📖 Sobre o Projeto
+## 📖 Sobre o Projeto
 
 O PetSOS é uma plataforma desenvolvida para auxiliar tutores de animais a encontrar atendimento veterinário e acessar rapidamente informações importantes sobre seus pets em situações de emergência.
 
@@ -25,7 +25,7 @@ O sistema busca:
 
 ⸻
 
-##👥 Público-Alvo
+## 👥 Público-Alvo
 
 * Tutores de cães e gatos;
 * Clínicas veterinárias;
@@ -34,7 +34,7 @@ O sistema busca:
 
 ⸻
 
-##⚙️ Funcionalidades Principais
+## ⚙️ Funcionalidades Principais
 
 1. Cadastro de Pets
 
@@ -77,7 +77,7 @@ Permite armazenar os dados básicos do responsável pelo animal.
 
 ⸻
 
-##🗺️ Diagramas de Caso de Uso e Sequência
+## 🗺️ Diagramas de Caso de Uso e Sequência
 
 ## Diagrama de Caso de Uso
 
@@ -130,7 +130,7 @@ flowchart LR
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 
-##🗂️ Estrutura do Projeto
+## 🗂️ Estrutura do Projeto
 
 PetSOS/
 │
@@ -149,7 +149,7 @@ PetSOS/
 └── README.md
 
 
-##🚀 Roadmap do MVP
+## 🚀 Roadmap do MVP
 
 Milestone 1 — Estrutura Inicial
 
@@ -187,7 +187,7 @@ Milestone 5 — Polimento
 
 
 
-🔒 Requisitos Não Funcionais
+## 🔒 Requisitos Não Funcionais
 
 Os requisitos não funcionais definem características de qualidade que o sistema deverá apresentar.
 
@@ -196,7 +196,7 @@ Os requisitos não funcionais definem características de qualidade que o sistem
 * RNF07 — Manutenibilidade: o código deverá ser organizado de forma que futuras alterações e melhorias possam ser realizadas com facilidade.
 
 
-📱 Telas do sistema
+## 📱 Telas do sistema
 
 * 🏠 Tela inicial — acesso às principais funcionalidades.
 * 🐶 Perfil do pet — informações e dados de saúde do animal.
