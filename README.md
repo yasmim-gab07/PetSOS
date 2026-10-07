@@ -10,7 +10,7 @@ A proposta combina cadastro de animais, informações de saúde, busca por atend
 
 ⸻
 
-##🎯 Objetivo
+## 🎯 Objetivo
 
 O principal objetivo do PetSOS é facilitar o acesso às informações do animal e ao atendimento veterinário, reduzindo o tempo necessário para encontrar dados importantes durante uma situação de emergência.
 
