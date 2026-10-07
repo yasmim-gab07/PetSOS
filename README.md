@@ -116,6 +116,36 @@ flowchart LR
     Admin --> L
 ```
 
+## Demonstração do Aplicativo
+
+### Página Inicial
+![Página Inicial](img/pagina.inicial.png)
+
+### Meus Pets
+![Meus Pets](img/meus.pets.png)
+
+### Cartão Pet
+![Cartão Pet](img/cartao.pet.png)
+
+### Procurar Veterinário
+![Procurar Veterinário](img/procurar.vet.png)
+
+### Chat Veterinário
+![Chat Veterinário](img/chat.vet.png)
+
+### Ficha Pet
+![Ficha Pet](img/ficha.pet.png)
+
+### Informações Veterinárias
+![Informações Veterinárias](img/informacoes.vet.png)
+
+### Perfil do Tutor
+![Perfil do Tutor](img/perfil.tutor.png)
+
+### Configurações
+![Configurações](img/configuracoes.png)
+
+
 ## 🛠️ Tecnologias utilizadas
 
 ### 💻 Front-end
