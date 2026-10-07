@@ -122,65 +122,16 @@ flowchart LR
 sequenceDiagram
     actor Tutor
     participant PetSOS
-    participant Dados as Dados do Pet
-    actor Vet as Veterinário
+    participant DadosPet
+    actor Veterinario
 
-    Tutor->>PetSOS: Acessa cartão de emergência
-    PetSOS->>Dados: Solicita dados do pet
-    Dados-->>PetSOS: Retorna informações
+    Tutor->>PetSOS: Acessa o cartão de emergência
+    PetSOS->>DadosPet: Solicita dados do pet
+    DadosPet-->>PetSOS: Retorna informações
     PetSOS-->>Tutor: Exibe cartão de emergência
     Tutor->>PetSOS: Envia ficha de emergência
-    PetSOS->>Vet: Envia ficha do pet
-    Vet-->>Tutor: Responde pelo chat
-
-## Demonstração do Aplicativo
-
-<table>
-  <tr>
-    <td align="center">
-      <strong>Página Inicial</strong><br>
-      <img src="img/pagina.inicial.png" width="200">
-    </td>
-    <td align="center">
-      <strong>Meus Pets</strong><br>
-      <img src="img/meus.pets.png" width="200">
-    </td>
-    <td align="center">
-      <strong>Cartão Pet</strong><br>
-      <img src="img/cartao.pet.png" width="200">
-    </td>
-  </tr>
-
-  <tr>
-    <td align="center">
-      <strong>Procurar Veterinário</strong><br>
-      <img src="img/procurar.vet.png" width="200">
-    </td>
-    <td align="center">
-      <strong>Chat Veterinário</strong><br>
-      <img src="img/chat.vet.png" width="200">
-    </td>
-    <td align="center">
-      <strong>Ficha Pet</strong><br>
-      <img src="img/ficha.pet.png" width="200">
-    </td>
-  </tr>
-
-  <tr>
-    <td align="center">
-      <strong>Informações Veterinárias</strong><br>
-      <img src="img/informaçoes.vet.png" width="200">
-    </td>
-    <td align="center">
-      <strong>Perfil do Tutor</strong><br>
-      <img src="img/perfil.tutor.png" width="200">
-    </td>
-    <td align="center">
-      <strong>Configurações</strong><br>
-      <img src="img/configuraçoes.png" width="200">
-    </td>
-  </tr>
-</table>
+    PetSOS->>Veterinario: Envia ficha do pet
+    Veterinario-->>Tutor: Responde pelo chat
 
 
 ## 🛠️ Tecnologias Utilizadas
