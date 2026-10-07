@@ -149,6 +149,7 @@ PetSOS/
 │   └── imagens das telas
 ├── index.html
 └── README.md
+```
 
 ## 📌 Roadmap do MVP
 
@@ -174,19 +175,10 @@ PetSOS/
 - [ ] Banco de dados
 - [ ] Notificações de emergência
 
-
-
-## 🔒 Requisitos Não Funcionais
-
-Os requisitos não funcionais definem características de qualidade que o sistema deverá apresentar.
-
-* RNF05 — Disponibilidade: o sistema deverá estar disponível para acesso sempre que o usuário precisar utilizar suas funcionalidades.
-* RNF06 — Acessibilidade: a interface deverá utilizar elementos visuais e textos que facilitem a utilização por diferentes usuários.
-* RNF07 — Manutenibilidade: o código deverá ser organizado de forma que futuras alterações e melhorias possam ser realizadas com facilidade.
-
 ## ▶️ Como Executar
 
 1. Clone ou baixe este repositório.
 2. Abra a pasta do projeto.
 3. Abra o arquivo `index.html` em um navegador.
 4. O PetSOS será executado localmente.
+
