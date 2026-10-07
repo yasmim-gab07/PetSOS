@@ -116,23 +116,6 @@ flowchart LR
     Admin --> L
 ```
 
-### Diagrama de Sequência — Cartão de Emergência
-
-```mermaid
-sequenceDiagram
-    actor Tutor
-    participant PetSOS
-    participant DadosPet
-    actor Veterinario
-
-    Tutor->>PetSOS: Acessa o cartão de emergência
-    PetSOS->>DadosPet: Solicita dados do pet
-    DadosPet-->>PetSOS: Retorna informações
-    PetSOS-->>Tutor: Exibe cartão de emergência
-    Tutor->>PetSOS: Envia ficha de emergência
-    PetSOS->>Veterinario: Envia ficha do pet
-    Veterinario-->>Tutor: Responde pelo chat
-
 
 ## 🛠️ Tecnologias Utilizadas
 
