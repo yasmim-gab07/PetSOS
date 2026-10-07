@@ -118,32 +118,52 @@ flowchart LR
 
 ## Demonstração do Aplicativo
 
-### Página Inicial
-![Página Inicial](img/pagina.inicial.png)
+<table>
+  <tr>
+    <td align="center">
+      <strong>Página Inicial</strong><br>
+      <img src="img/pagina.inicial.png" width="200">
+    </td>
+    <td align="center">
+      <strong>Meus Pets</strong><br>
+      <img src="img/meus.pets.png" width="200">
+    </td>
+    <td align="center">
+      <strong>Cartão Pet</strong><br>
+      <img src="img/cartao.pet.png" width="200">
+    </td>
+  </tr>
 
-### Meus Pets
-![Meus Pets](img/meus.pets.png)
+  <tr>
+    <td align="center">
+      <strong>Procurar Veterinário</strong><br>
+      <img src="img/procurar.vet.png" width="200">
+    </td>
+    <td align="center">
+      <strong>Chat Veterinário</strong><br>
+      <img src="img/chat.vet.png" width="200">
+    </td>
+    <td align="center">
+      <strong>Ficha Pet</strong><br>
+      <img src="img/ficha.pet.png" width="200">
+    </td>
+  </tr>
 
-### Cartão Pet
-![Cartão Pet](img/cartao.pet.png)
-
-### Procurar Veterinário
-![Procurar Veterinário](img/procurar.vet.png)
-
-### Chat Veterinário
-![Chat Veterinário](img/chat.vet.png)
-
-### Ficha Pet
-![Ficha Pet](img/ficha.pet.png)
-
-### Informações Veterinárias
-![Informações Veterinárias](img/informacoes.vet.png)
-
-### Perfil do Tutor
-![Perfil do Tutor](img/perfil.tutor.png)
-
-### Configurações
-![Configurações](img/configuracoes.png)
+  <tr>
+    <td align="center">
+      <strong>Informações Veterinárias</strong><br>
+      <img src="img/informacoes.vet.png" width="200">
+    </td>
+    <td align="center">
+      <strong>Perfil do Tutor</strong><br>
+      <img src="img/perfil.tutor.png" width="200">
+    </td>
+    <td align="center">
+      <strong>Configurações</strong><br>
+      <img src="img/configuracoes.png" width="200">
+    </td>
+  </tr>
+</table>
 
 
 ## 🛠️ Tecnologias utilizadas
