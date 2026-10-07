@@ -116,6 +116,23 @@ flowchart LR
     Admin --> L
 ```
 
+### Diagrama de Sequência — Cartão de Emergência
+
+```mermaid
+sequenceDiagram
+    actor Tutor
+    participant PetSOS
+    participant Dados as Dados do Pet
+    actor Vet as Veterinário
+
+    Tutor->>PetSOS: Acessa cartão de emergência
+    PetSOS->>Dados: Solicita dados do pet
+    Dados-->>PetSOS: Retorna informações
+    PetSOS-->>Tutor: Exibe cartão de emergência
+    Tutor->>PetSOS: Envia ficha de emergência
+    PetSOS->>Vet: Envia ficha do pet
+    Vet-->>Tutor: Responde pelo chat
+
 ## Demonstração do Aplicativo
 
 <table>
@@ -166,74 +183,62 @@ flowchart LR
 </table>
 
 
-## 🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 ### 💻 Front-end
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 ### 🔧 Versionamento
 
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
+
+### 💾 Armazenamento
+
+[![LocalStorage](https://img.shields.io/badge/LocalStorage-000000?style=for-the-badge&logo=googlechrome&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage)
 
 
-## 🗂️ Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
+```text
 PetSOS/
-│
-├── index.html
-│
 ├── css/
 │   └── style.css
-│
 ├── js/
 │   └── script.js
-│
 ├── img/
+│   ├── animais.petSOS.png
 │   ├── logo.petSOS.png
-│   └── animais.petSOS.png
-│
+│   └── imagens das telas
+├── index.html
 └── README.md
 
+## 📌 Roadmap do MVP
 
-## 🚀 Roadmap do MVP
+### ✅ Já desenvolvido
 
-Milestone 1 — Estrutura Inicial
+- [x] Cadastro de tutor
+- [x] Cadastro de pets
+- [x] Cartão de Emergência
+- [x] Consulta de informações do pet
+- [x] Busca de veterinários
+- [x] Informações sobre clínicas
+- [x] Histórico do pet
+- [x] Chat veterinário simulado
+- [x] Interface responsiva
+- [x] Armazenamento local com LocalStorage
 
-* [x]	Criar estrutura do projeto;
-* [x]	Criar interface inicial;
-* [x]	Configurar HTML e CSS.
+### 🔜 Próximas melhorias
 
-Milestone 2 — Cadastro de Pets
-
-* [x]	Cadastro;
-* [x]	Edição;
-* [x]	Exclusão;
-* [x]	Informações de saúde.
-
-Milestone 3 — Cartão de Emergência
-
-* [x]	Visualização das informações;
-* [x]	Acesso rápido;
-* [x]	Compartilhamento simulado pelo chat.
-
-Milestone 4 — Atendimento Veterinário
-
-* [x]	Busca de clínicas;
-* [x]	Especialidades;
-* [x]	Informações da clínica;
-* [x]	Chat simulado.
-
-Milestone 5 — Polimento
-
-* [x]	Interface responsiva;
-* [x]	Identidade visual;
-* [x]	Logo;
-* [x]	Ilustrações;
-* [x]	Organização da documentação.
+- [ ] Integração com localização e mapas
+- [ ] Cadastro real de clínicas e veterinários
+- [ ] Chat veterinário em tempo real
+- [ ] Sistema de login e autenticação
+- [ ] Banco de dados
+- [ ] Notificações de emergência
 
 
 
@@ -245,12 +250,9 @@ Os requisitos não funcionais definem características de qualidade que o sistem
 * RNF06 — Acessibilidade: a interface deverá utilizar elementos visuais e textos que facilitem a utilização por diferentes usuários.
 * RNF07 — Manutenibilidade: o código deverá ser organizado de forma que futuras alterações e melhorias possam ser realizadas com facilidade.
 
+## ▶️ Como Executar
 
-## 📱 Telas do sistema
-
-* 🏠 Tela inicial — acesso às principais funcionalidades.
-* 🐶 Perfil do pet — informações e dados de saúde do animal.
-* 🚨 Cartão de Emergência — informações essenciais para situações de urgência.
-* 🏥 Busca por atendimento — clínicas e hospitais veterinários.
-* 📋 Histórico — consultas e procedimentos realizados.
-* ⚙️ Configurações — gerenciamento da conta e dos pets.
+1. Clone ou baixe este repositório.
+2. Abra a pasta do projeto.
+3. Abra o arquivo `index.html` em um navegador.
+4. O PetSOS será executado localmente.
