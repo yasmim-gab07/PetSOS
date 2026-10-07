@@ -1,65 +1,120 @@
-# 🐾PetSOS
-Plataforma para auxiliar tutores a encontrar atendimento veterinário e acessar informações importantes de seus animais em situações de emergencia.
+#🐾 PetSOS — Plataforma de Atendimento e Emergência Veterinária
 
+Informação rápida. Cuidado quando mais importa.
 
-📌Sobre o projeto
-O PetSOS é uma plataforma voltada para situações de emergencia envolvendo animais domésticos. A proposta é centralizar informações importantes do pet e facilitar o acesso a serviços veterinários, permitindo que o tutor encontre o que precisa de forma rápida em momentos de urgencia.
+##📖 Sobre o Projeto
 
+O PetSOS é uma plataforma desenvolvida para auxiliar tutores de animais a encontrar atendimento veterinário e acessar rapidamente informações importantes sobre seus pets em situações de emergência.
 
-🎯Objetivo
-Facilitar o acesso dos tutores a informações essenciais sobre seus animais e a serviços veterinários, proporcionando mais agilidade e organização em situações de emergencia. 
+A proposta combina cadastro de animais, informações de saúde, busca por atendimento veterinário e um Cartão de Emergência, permitindo que dados essenciais estejam organizados e disponíveis de forma rápida.
 
+⸻
 
-🐶Público-alvo
-O sistema é destinado a tutores de animais domésticos, especialmente aqueles que desejam manter os dados de saúde de seus pets organizados e ter acesso rápido a informações importantes e serviços veterinários quando necessário
+##🎯 Objetivo
 
+O principal objetivo do PetSOS é facilitar o acesso às informações do animal e ao atendimento veterinário, reduzindo o tempo necessário para encontrar dados importantes durante uma situação de emergência.
 
-🚨 Funcionalidades principais
-* Cadastro e gerenciamento de animais
-* Cartão de emergência do pet
-* Cadastro de informações de saúde
-* Registro de alergias, medicamentos e condições importantes
-* Busca por clínicas e hospitais veterinários
-* Visualização de informações dos estabelecimentos veterinários
-* Registro de consultas e procedimentos
-* Histórico de atendimentos do animal
-* Acesso rápido às informações em situações de emergência
+O sistema busca:
 
+* Cadastrar e organizar informações dos pets;
+* Armazenar alergias, medicamentos e condições de saúde;
+* Disponibilizar um Cartão de Emergência;
+* Facilitar a busca por clínicas e veterinários;
+* Permitir o compartilhamento das informações do pet;
+* Centralizar informações importantes em um único sistema.
 
-⚙️ Como o sistema funciona
-O PetSOS será organizado para que o tutor possa cadastrar seus animais e manter suas principais informações centralizadas em um único lugar. Ao acessar a plataforma, o tutor poderá selecionar um de seus pets e visualizar seu perfil, contendo informações como dados básicos, alergias, medicamentos e outras condições importantes.Em uma situação de emergência, o tutor poderá acessar rapidamente o Cartão de Emergência, que reunirá as informações mais relevantes do animal para facilitar o atendimento veterinário.
-A plataforma também permitirá buscar clínicas e hospitais veterinários, apresentando informações dos estabelecimentos para auxiliar o tutor na escolha de um local para atendimento. 
-Após o atendimento, o tutor poderá registrar a consulta ou procedimento realizado, mantendo um histórico organizado da saúde do animal.
+⸻
 
+##👥 Público-Alvo
 
-👥 Atores do sistema
-O PetSOS contará com diferentes tipos de usuários, cada um com funções específicas dentro da plataforma.
+* Tutores de cães e gatos;
+* Clínicas veterinárias;
+* Médicos veterinários;
+* Pessoas responsáveis por animais que precisam de atendimento rápido.
 
-🐶 Tutor
-É o principal usuário do sistema. Poderá cadastrar seus animais, manter suas informações de saúde atualizadas, acessar o Cartão de Emergência, buscar atendimento veterinário e consultar o histórico de atendimentos.
+⸻
 
-🩺 Clínica ou Veterinário
-Poderá disponibilizar informações sobre o estabelecimento veterinário, como localização, contato, horário de atendimento e serviços oferecidos.
+##⚙️ Funcionalidades Principais
 
-🛡️ Administrador
-Será responsável pelo gerenciamento da plataforma, podendo administrar usuários, estabelecimentos veterinários e informações cadastradas no sistema.
+1. Cadastro de Pets
 
+Permite cadastrar informações como:
 
-🎯 MVP — Produto Mínimo Viável
+* Nome;
+* Espécie;
+* Sexo;
+* Idade;
+* Peso;
+* Alergias;
+* Medicamentos;
+* Condições de saúde;
+* Observações.
 
-A primeira versão do PetSOS terá como foco as funcionalidades essenciais para auxiliar o tutor em situações de emergência.
+2. Cartão de Emergência
 
-Funcionalidades do MVP
+Apresenta rapidamente as principais informações de saúde do animal para facilitar um possível atendimento veterinário.
 
-* Cadastro do tutor
-* Cadastro do pet
-* Cartão de Emergência
-* Cadastro de informações importantes sobre a saúde do animal
-* Busca por clínicas e hospitais veterinários
-* Visualização das informações dos estabelecimentos
+3. Busca de Veterinários
 
-As demais funcionalidades poderão ser desenvolvidas posteriormente, conforme a evolução do projeto e as necessidades dos usuários.
+Permite pesquisar clínicas e visualizar:
 
+* Localização;
+* Horário de atendimento;
+* Telefone;
+* Especialidades.
+
+4. Chat Veterinário
+
+Permite simular uma conversa entre tutor e veterinário, incluindo o envio da ficha de emergência.
+
+5. Histórico
+
+Centraliza registros de consultas e procedimentos realizados pelo pet.
+
+6. Perfil do Tutor
+
+Permite armazenar os dados básicos do responsável pelo animal.
+
+⸻
+
+##🗺️ Diagramas de Caso de Uso e Sequência
+
+## Diagrama de Caso de Uso
+
+```mermaid
+flowchart LR
+    Tutor([Tutor])
+    Vet([Veterinário / Clínica])
+    Admin([Administrador])
+
+    subgraph PetSOS
+        A[Cadastrar pet]
+        B[Editar dados do pet]
+        C[Consultar cartão de emergência]
+        D[Buscar veterinário]
+        E[Visualizar clínica]
+        F[Conversar com veterinário]
+        G[Enviar ficha de emergência]
+        H[Consultar histórico]
+        I[Gerenciar dados pessoais]
+        J[Receber ficha do pet]
+        K[Responder ao tutor]
+        L[Gerenciar informações]
+    end
+
+    Tutor --> A
+    Tutor --> B
+    Tutor --> C
+    Tutor --> D
+    Tutor --> E
+    Tutor --> F
+    Tutor --> G
+    Tutor --> H
+    Tutor --> I
+    Vet --> J
+    Vet --> K
+    Admin --> L
+```
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -73,6 +128,63 @@ As demais funcionalidades poderão ser desenvolvidas posteriormente, conforme a 
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+
+##🗂️ Estrutura do Projeto
+
+PetSOS/
+│
+├── index.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── img/
+│   ├── logo.petSOS.png
+│   └── animais.petSOS.png
+│
+└── README.md
+
+
+##🚀 Roadmap do MVP
+
+Milestone 1 — Estrutura Inicial
+
+* [x]	Criar estrutura do projeto;
+* [x]	Criar interface inicial;
+* [x]	Configurar HTML e CSS.
+
+Milestone 2 — Cadastro de Pets
+
+* [x]	Cadastro;
+* [x]	Edição;
+* [x]	Exclusão;
+* [x]	Informações de saúde.
+
+Milestone 3 — Cartão de Emergência
+
+* [x]	Visualização das informações;
+* [x]	Acesso rápido;
+* [x]	Compartilhamento simulado pelo chat.
+
+Milestone 4 — Atendimento Veterinário
+
+* [x]	Busca de clínicas;
+* [x]	Especialidades;
+* [x]	Informações da clínica;
+* [x]	Chat simulado.
+
+Milestone 5 — Polimento
+
+* [x]	Interface responsiva;
+* [x]	Identidade visual;
+* [x]	Logo;
+* [x]	Ilustrações;
+* [x]	Organização da documentação.
+
 
 
 🔒 Requisitos Não Funcionais
